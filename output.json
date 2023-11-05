@@ -1,0 +1,311 @@
+{
+  "data": {
+    "home_search": {
+      "__typename": "SearchHomeResult",
+      "count": 2,
+      "total": 158,
+      "results": [
+        {
+          "__typename": "SearchHome",
+          "property_id": "8635369057",
+          "listing_id": "2961358287",
+          "plan_id": null,
+          "status": "for_sale",
+          "photo_count": 39,
+          "branding": [
+            {
+              "__typename": "Branding",
+              "photo": null,
+              "name": "The Agency Collective LLC",
+              "phone": null,
+              "link": null
+            }
+          ],
+          "location": {
+            "__typename": "SearchHomeLocation",
+            "address": {
+              "__typename": "SearchHomeAddress",
+              "city": "Dallas",
+              "line": "6920 Rockview Ln",
+              "street_name": "Rockview",
+              "street_number": "6920",
+              "street_suffix": "Ln",
+              "country": "USA",
+              "postal_code": "75214",
+              "state_code": "TX",
+              "state": "Texas",
+              "coordinate": {
+                "__typename": "Coordinate",
+                "lat": 32.848749,
+                "lon": -96.735363,
+                "accuracy": null
+              }
+            },
+            "street_view_url": "https://maps.googleapis.com/maps/api/streetview?channel=rdc-streetview&client=gme-movesalesinc&location=6920%20Rockview%20Ln%2C%20Dallas%2C%20TX%2075214&size=640x480&source=outdoor&signature=wHDwKzsFJ3O2WSfKV4_Gd7U_v0E=",
+            "county": {
+              "__typename": "HomeCounty",
+              "fips_code": "48113"
+            }
+          },
+          "open_houses": null,
+          "description": {
+            "__typename": "SearchHomeDescription",
+            "sub_type": null,
+            "type": "single_family",
+            "beds": 4,
+            "baths": 3,
+            "lot_sqft": 8756,
+            "sqft": 2257,
+            "beds_max": null,
+            "beds_min": null,
+            "sqft_max": null,
+            "sqft_min": null,
+            "baths_full": 2,
+            "baths_half": 1,
+            "baths_min": null,
+            "baths_max": null,
+            "baths_full_calc": 2,
+            "baths_partial_calc": 1
+          },
+          "virtual_tours": [
+            {
+              "__typename": "VirtualTour",
+              "href": "https://www.propertypanorama.com/instaview/ntreis/20469965"
+            }
+          ],
+          "matterport": false,
+          "advertisers": [
+            {
+              "__typename": "HomeAdvertiser",
+              "fulfillment_id": "0",
+              "name": "Wendy Borroto",
+              "email": "borroto.wendy@gmail.com",
+              "href": null,
+              "slogan": null,
+              "type": "seller"
+            }
+          ],
+          "flags": {
+            "__typename": "HomeFlags",
+            "is_price_reduced": null,
+            "is_new_construction": null,
+            "is_foreclosure": null,
+            "is_plan": null,
+            "is_new_listing": true,
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_pending": null
+          },
+          "source": {
+            "__typename": "MlsSource",
+            "agents": [
+              {
+                "__typename": "MlsAgent",
+                "id": "NTTX",
+                "agent_id": "0783026",
+                "agent_name": "Wendy Borroto",
+                "office_id": "AGCO01",
+                "office_name": "The Agency Collective LLC"
+              }
+            ],
+            "id": "NTTX",
+            "type": "mls",
+            "spec_id": null,
+            "plan_id": null,
+            "listing_href": null,
+            "listing_id": "20469965"
+          },
+          "pet_policy": null,
+          "community": null,
+          "primary_photo": {
+            "__typename": "Photo",
+            "href": "https://ap.rdcpix.com/7ea73824b23a59865a48a9fdfc3d592el-m3348307225s.jpg"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/6920-Rockview-Ln_Dallas_TX_75214_M86353-69057",
+          "list_price": 649900,
+          "list_price_min": null,
+          "list_price_max": null,
+          "price_reduced_amount": null,
+          "estimate": {
+            "__typename": "LatestEstimate",
+            "estimate": 619400
+          },
+          "lead_attributes": {
+            "__typename": "LeadAttributes",
+            "lead_type": "co_broke",
+            "show_contact_an_agent": true,
+            "opcity_lead_attributes": {
+              "__typename": "OpCityLeadAttributes",
+              "flip_the_market_enabled": true
+            }
+          },
+          "last_sold_date": null,
+          "list_date": "2023-11-04T08:19:18Z",
+          "products": {
+            "__typename": "ProductSummary",
+            "brand_name": "basic_opt_in",
+            "products": [
+              "co_broke"
+            ]
+          },
+          "last_sold_price": null
+        },
+        {
+          "__typename": "SearchHome",
+          "property_id": "8312089636",
+          "listing_id": "2961357761",
+          "plan_id": null,
+          "status": "for_sale",
+          "photo_count": 37,
+          "branding": [
+            {
+              "__typename": "Branding",
+              "photo": null,
+              "name": "ALLIE BETH ALLMAN & ASSOCIATES",
+              "phone": null,
+              "link": null
+            }
+          ],
+          "location": {
+            "__typename": "SearchHomeLocation",
+            "address": {
+              "__typename": "SearchHomeAddress",
+              "city": "Dallas",
+              "line": "6255 Belmont Ave",
+              "street_name": "Belmont",
+              "street_number": "6255",
+              "street_suffix": "Ave",
+              "country": "USA",
+              "postal_code": "75214",
+              "state_code": "TX",
+              "state": "Texas",
+              "coordinate": {
+                "__typename": "Coordinate",
+                "lat": 32.81746,
+                "lon": -96.75645,
+                "accuracy": null
+              }
+            },
+            "street_view_url": "https://maps.googleapis.com/maps/api/streetview?channel=rdc-streetview&client=gme-movesalesinc&location=6255%20Belmont%20Ave%2C%20Dallas%2C%20TX%2075214&size=640x480&source=outdoor&signature=iXslTwcbdJs6Z4nUHSq7o9CTz7k=",
+            "county": {
+              "__typename": "HomeCounty",
+              "fips_code": "48113"
+            }
+          },
+          "open_houses": [
+            {
+              "__typename": "HomeOpenHouse",
+              "start_date": "2023-11-05T17:00:00Z",
+              "end_date": "2023-11-05T19:00:00Z",
+              "description": null,
+              "time_zone": "CST"
+            }
+          ],
+          "description": {
+            "__typename": "SearchHomeDescription",
+            "sub_type": null,
+            "type": "single_family",
+            "beds": 5,
+            "baths": 6,
+            "lot_sqft": 7492,
+            "sqft": 3397,
+            "beds_max": null,
+            "beds_min": null,
+            "sqft_max": null,
+            "sqft_min": null,
+            "baths_full": 5,
+            "baths_half": 1,
+            "baths_min": null,
+            "baths_max": null,
+            "baths_full_calc": 5,
+            "baths_partial_calc": 1
+          },
+          "virtual_tours": [
+            {
+              "__typename": "VirtualTour",
+              "href": "https://www.propertypanorama.com/instaview/ntreis/20446725"
+            }
+          ],
+          "matterport": false,
+          "advertisers": [
+            {
+              "__typename": "HomeAdvertiser",
+              "fulfillment_id": "2824424",
+              "name": "John Scoggins",
+              "email": "jscoggins@briggsfreeman.com",
+              "href": null,
+              "slogan": null,
+              "type": "seller"
+            }
+          ],
+          "flags": {
+            "__typename": "HomeFlags",
+            "is_price_reduced": null,
+            "is_new_construction": null,
+            "is_foreclosure": null,
+            "is_plan": null,
+            "is_new_listing": true,
+            "is_coming_soon": null,
+            "is_contingent": null,
+            "is_pending": null
+          },
+          "source": {
+            "__typename": "MlsSource",
+            "agents": [
+              {
+                "__typename": "MlsAgent",
+                "id": "NTTX",
+                "agent_id": "0632067",
+                "agent_name": "John Scoggins",
+                "office_id": "ABAR01",
+                "office_name": "Allie Beth Allman & Assoc."
+              }
+            ],
+            "id": "NTTX",
+            "type": "mls",
+            "spec_id": null,
+            "plan_id": null,
+            "listing_href": null,
+            "listing_id": "20446725"
+          },
+          "pet_policy": null,
+          "community": null,
+          "primary_photo": {
+            "__typename": "Photo",
+            "href": "https://ap.rdcpix.com/eb92eb0b85bcdacca0f06545d17a927bl-m1884097623s.jpg"
+          },
+          "href": "https://www.realtor.com/realestateandhomes-detail/6255-Belmont-Ave_Dallas_TX_75214_M83120-89636",
+          "list_price": 1529900,
+          "list_price_min": null,
+          "list_price_max": null,
+          "price_reduced_amount": null,
+          "estimate": {
+            "__typename": "LatestEstimate",
+            "estimate": 1050900
+          },
+          "lead_attributes": {
+            "__typename": "LeadAttributes",
+            "lead_type": "co_broke",
+            "show_contact_an_agent": true,
+            "opcity_lead_attributes": {
+              "__typename": "OpCityLeadAttributes",
+              "flip_the_market_enabled": true
+            }
+          },
+          "last_sold_date": "2013-05-31",
+          "list_date": "2023-11-04T07:03:51Z",
+          "products": {
+            "__typename": "ProductSummary",
+            "brand_name": "essentials",
+            "products": [
+              "core.agent",
+              "core.broker",
+              "co_broke"
+            ]
+          },
+          "last_sold_price": null
+        }
+      ]
+    }
+  }
+}
