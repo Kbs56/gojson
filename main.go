@@ -31,6 +31,7 @@ type ResStruct struct {
 				PriceReducedAmount int    `json:"price_reduced_amount"`
 				LastSoldPrice      int    `json:"last_sold_price"`
 				ListDate           string `json:"list_date"`
+				Status             string `json:"status"`
 			} `json:"results"`
 		} `json:"home_search"`
 	} `json:"data"`
@@ -109,7 +110,10 @@ func readJSONFile(fileName string) error {
 		panic(err)
 	}
 	res := &ResStruct{}
-	byteValue, _ := io.ReadAll(jsonFile)
+	byteValue, err := io.ReadAll(jsonFile)
+	if err != nil {
+		return err
+	}
 	json.Unmarshal(byteValue, res)
 	for i := 0; i < len(res.Data.HomeSearch.Results); i++ {
 		fullStreet := res.Data.HomeSearch.Results[i].Location.Address.Line
@@ -120,11 +124,13 @@ func readJSONFile(fileName string) error {
 		fmt.Println("Link:", res.Data.HomeSearch.Results[i].Href)
 		fmt.Println("List Price:", res.Data.HomeSearch.Results[i].ListPrice)
 		fmt.Println("List Date:", res.Data.HomeSearch.Results[i].ListDate)
+		fmt.Println("Status:", res.Data.HomeSearch.Results[i].Status)
 		fmt.Println("Price Reduced Amount:", res.Data.HomeSearch.Results[i].PriceReducedAmount)
 		fmt.Println("Last Sold Price:", res.Data.HomeSearch.Results[i].LastSoldPrice)
 		fmt.Println("Sqft:", res.Data.HomeSearch.Results[i].Description.Sqft)
 		fmt.Println("Beds:", res.Data.HomeSearch.Results[i].Description.Beds)
 		fmt.Println("Baths:", res.Data.HomeSearch.Results[i].Description.Baths)
+		fmt.Println()
 	}
 	return nil
 }
