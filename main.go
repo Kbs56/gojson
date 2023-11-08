@@ -70,7 +70,7 @@ func callApi(limit int, searchArea string, min int, max int) {
 		ListPrice: struct {
 			Min int "json:\"min\""
 			Max int "json:\"max\""
-		}{Min: min, Max: max}, // param min and max
+		}{Min: min, Max: max},
 	}
 
 	body, err := json.Marshal(reqBody)
