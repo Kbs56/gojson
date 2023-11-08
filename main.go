@@ -10,6 +10,7 @@ import (
 )
 
 // https://rapidapi.com/apidojo/api/realtor
+// json result stuct from api call
 type ResStruct struct {
 	Data struct {
 		HomeSearch struct {
@@ -53,14 +54,14 @@ type ReqBody struct {
 	} `json:"list_price"`
 }
 
-func callApi() {
+func callApi(limit int, searchArea string, min int, max int) {
 	url := "https://realtor.p.rapidapi.com/properties/v3/list"
 
 	statusSlice := []string{"for_sale", "ready_to_build"}
 	reqBody := &ReqBody{
-		Limit:      2,
+		Limit:      limit,
 		Offset:     0,
-		PostalCode: "75204",
+		PostalCode: searchArea,
 		Status:     statusSlice,
 		SortFields: struct {
 			Direction string "json:\"direction\""
@@ -69,7 +70,7 @@ func callApi() {
 		ListPrice: struct {
 			Min int "json:\"min\""
 			Max int "json:\"max\""
-		}{Min: 1, Max: 30_000_000},
+		}{Min: min, Max: max}, // param min and max
 	}
 
 	body, err := json.Marshal(reqBody)
@@ -91,7 +92,7 @@ func callApi() {
 	resp, _ := io.ReadAll(res.Body)
 
 	fmt.Println(string(resp))
-	createOutputFile(resp)
+	// createOutputFile(resp)
 }
 
 func createOutputFile(body []byte) {
@@ -149,5 +150,5 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	// callApi()
+	// callApi(10, "75204", 0, 1_000_000)
 }
