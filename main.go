@@ -9,6 +9,7 @@ import (
 	"os"
 )
 
+// https://rapidapi.com/apidojo/api/realtor
 type ResStruct struct {
 	Data struct {
 		HomeSearch struct {
@@ -45,7 +46,11 @@ type ReqBody struct {
 	SortFields struct {
 		Direction string `json:"direction"`
 		Field     string `json:"field"`
-	}
+	} `json:"sort_fields"`
+	ListPrice struct {
+		Min int `json:"min"`
+		Max int `json:"max"`
+	} `json:"list_price"`
 }
 
 func callApi() {
@@ -55,12 +60,16 @@ func callApi() {
 	reqBody := &ReqBody{
 		Limit:      2,
 		Offset:     0,
-		PostalCode: "75214",
+		PostalCode: "75204",
 		Status:     statusSlice,
 		SortFields: struct {
 			Direction string "json:\"direction\""
 			Field     string "json:\"field\""
 		}{Direction: "desc", Field: "list_date"},
+		ListPrice: struct {
+			Min int "json:\"min\""
+			Max int "json:\"max\""
+		}{Min: 1, Max: 30_000_000},
 	}
 
 	body, err := json.Marshal(reqBody)
